@@ -10,6 +10,10 @@ class House:
         self.number_of_floors = number_of_floors
 
     def go_to(self, new_floor):
+        """
+        Метод для перехода на указанный этаж.
+        :param new_floor: Этаж, на который нужно перейти.
+        """
         if 1 <= new_floor <= self.number_of_floors:
             print(*range(1, new_floor + 1), sep="\n")
         else:
